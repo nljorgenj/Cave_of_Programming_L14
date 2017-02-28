@@ -15,8 +15,18 @@ int main() {
 	int value;
 	cin >> value;
 
+	if (value < 3) {
+		cout << "Insufficient privileges to use these menu options." << endl;
+	}
+	else {
+		cout << "Privilege level sufficient." << endl;
+	}
+
 	if (value == 5) {
-		cout << "Application quitting ... " << endl;
+		cout << "Quitting ... " << endl;
+	}
+	else {
+		cout << "Not quitting." << endl;
 	}
 
 	return 0;
